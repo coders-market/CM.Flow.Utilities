@@ -1,0 +1,10 @@
+privilegeTargets:
+  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'CM.Flow.Utilities:Email':
+      matcher: 'method(public CM\Flow\Utilities\Controller\EmailController->.*Action())'
+roles:
+  'TYPO3.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'CM.Flow.Utilities:Email'
+        permission: GRANT

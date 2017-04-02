@@ -1,0 +1,16 @@
+{
+    "name": "cm/flow-utilities",
+    "type": "neos-plugin",
+    "description": "Flow plugin containing utilities for flow development.",
+    "license": "LGPL-3.0+",
+    "require": {
+        "neos/flow": "~4.0",
+        "neos/swiftmailer": "6.0.0"
+    },
+    "keywords": ["flow","swiftmailer","email","validator","viewhelper"],
+    "autoload": {
+        "psr-4": {
+            "CM\\Flow\\Utilities\\": "Classes"
+        }
+    }
+}
