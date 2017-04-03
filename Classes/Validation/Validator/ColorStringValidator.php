@@ -1,7 +1,7 @@
 <?php
 namespace CM\Flow\Utilities\Validation\Validator;
 
-use TYPO3\Flow\Validation\Validator\AbstractValidator;
+use Neos\Flow\Validation\Validator\AbstractValidator;
 
 class ColorStringValidator extends AbstractValidator {
     /*
@@ -22,7 +22,7 @@ class ColorStringValidator extends AbstractValidator {
      *
      * @param array $value
      * @return void
-     * @throws \TYPO3\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
+     * @throws \Neos\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
      */
     protected function isValid($value) {
         $notEmpty = $this->options['notEmpty'];

@@ -1,10 +1,9 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers\Request;
 
-use TYPO3\Flow\Exception;
-use TYPO3\Flow\Mvc\ActionRequest;
-use TYPO3\Fluid\Core\ViewHelper\AbstractConditionViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Exception;
+use Neos\Flow\Mvc\ActionRequest;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractConditionViewHelper;
 
 class IfMatchesViewHelper extends AbstractConditionViewHelper {
     /**

@@ -82,7 +82,7 @@ class EmailService {
      * @return bool TRUE on success, otherwise FALSE
      * @throws Exception
      */
-    public function sendTranslationBasedEmail($packageKey = 'TYPO3.Flow', $translationId, array $sender, array $recipient, array $variables = array(), $locale = null, $source = 'Mails',$cc = null,$bcc = null,$attachments = array()) {
+    public function sendTranslationBasedEmail($packageKey = 'Neos.Flow', $translationId, array $sender, array $recipient, array $variables = array(), $locale = null, $source = 'Mails',$cc = null,$bcc = null,$attachments = array()) {
         $localeObject = null;
         if ($locale !== null) {
             try {
@@ -142,7 +142,7 @@ class EmailService {
      * @return void
      */
     protected function initializeRouter() {
-        $routesConfiguration = $this->configurationManager->getConfiguration(\TYPO3\Flow\Configuration\ConfigurationManager::CONFIGURATION_TYPE_ROUTES);
+        $routesConfiguration = $this->configurationManager->getConfiguration(\Neos\Flow\Configuration\ConfigurationManager::CONFIGURATION_TYPE_ROUTES);
         $this->router->setRoutesConfiguration($routesConfiguration);
     }
 }

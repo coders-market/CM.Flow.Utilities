@@ -1,9 +1,8 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers\Arrays;
 
-use TYPO3\Flow\Exception;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Exception;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 
 class ImplodeViewHelper extends AbstractViewHelper {
     /**

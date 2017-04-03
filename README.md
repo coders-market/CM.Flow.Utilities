@@ -6,7 +6,7 @@ Utility Package for Flow development.
 
 Services
 --------
-**EmailService** - Based on TYPO3 Swift Mailer to send template/translation based emails
+**EmailService** - Based on Neos Swift Mailer to send template/translation based emails
 
 **DateTimeService** - Parse strings to DateTime or create strings from DateTime based on locale
 

@@ -1,9 +1,8 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers;
 
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Fluid\View\StandaloneView;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
+use Neos\FluidAdaptor\View\StandaloneView;
 
 /**
  * check current context
@@ -36,12 +35,6 @@ class RenderExternalViewHelper extends AbstractViewHelper {
         $standaloneView->assignMultiple($arguments);
 
         return $standaloneView->render();
-
-        //$standaloneView->setPartialRootPath('resource://' . $packageKey . '/Private/Partials/');
-        //$templatePathAndFilename = sprintf('resource://' . $packageKey . '/Private/Mails/%s.%s', $templateIdentifier, $format);
-        //$standaloneView->setTemplatePathAndFilename($templatePathAndFilename);
-
-        //return $standaloneView->renderPartial($partial, $sectionName, $arguments);
     }
 
     /**

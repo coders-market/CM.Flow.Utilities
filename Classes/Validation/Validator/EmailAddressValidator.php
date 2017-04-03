@@ -1,9 +1,9 @@
 <?php
 namespace CM\Flow\Utilities\Validation\Validator;
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Security\AccountRepository;
-use TYPO3\Flow\Validation\Validator\EmailAddressValidator as FlowEmailAddressValidator;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Security\AccountRepository;
+use Neos\Flow\Validation\Validator\EmailAddressValidator as FlowEmailAddressValidator;
 
 class EmailAddressValidator extends FlowEmailAddressValidator {
     /**
@@ -31,7 +31,7 @@ class EmailAddressValidator extends FlowEmailAddressValidator {
      *
      * @param array $value
      * @return void
-     * @throws \TYPO3\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
+     * @throws \Neos\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
      */
     protected function isValid($value) {
         $notEmpty = $this->options['notEmpty'];

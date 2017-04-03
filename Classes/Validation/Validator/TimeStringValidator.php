@@ -2,8 +2,8 @@
 namespace CM\Flow\Utilities\Validation\Validator;
 
 use CM\Flow\Utilities\Service\DateTimeService;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Validation\Validator\AbstractValidator;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Validation\Validator\AbstractValidator;
 
 class TimeStringValidator extends AbstractValidator {
     /**
@@ -30,7 +30,7 @@ class TimeStringValidator extends AbstractValidator {
      *
      * @param array $value
      * @return void
-     * @throws \TYPO3\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
+     * @throws \Neos\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
      */
     protected function isValid($value) {
         $notEmpty = $this->options['notEmpty'];

@@ -10,7 +10,7 @@ use Neos\Flow\Security\Exception\MissingConfigurationException;
  */
 class DateTimeService {
     /**
-     * @Flow\Inject(setting="dateFormats", package="CM.SelfTrackingPortal.Core")
+     * @Flow\InjectConfiguration(setting="dateFormats", package="Axovis.SelfTrackingPortal.Core")
      * @var array
      */
     protected $dateFormats;
@@ -111,56 +111,6 @@ class DateTimeService {
         return $datetime;
     }
 
-    /*
-     * @param $value
-     * @return int
-     *
-    private function parseDate($value) {
-        if(!$this->validateDate($value)) {
-            return false;
-        }
-
-
-    }*/
-
-    /*
-     * @param $value
-     * @return int
-     *
-    private function parseTime($value) {
-        if(!$this->validateTime($value)) {
-            return false;
-        }
-
-        $twelveHours = preg_match('/p|a/',$value) === 1;
-        $pm = false;
-        if($twelveHours) {
-            $pm = preg_match('/p/',$value) === 1;
-            $value = str_replace(array('a','A','p','P','m','M','.',' '),'',$value);
-        }
-
-        $value = trim($value);
-        $parts = explode(':',trim($value));
-
-        $hour = 0;
-        $minute = 0;
-        $second = 0;
-        if(is_numeric($parts[0])) {
-            $hour = $parts[0];
-        }
-        if(count($parts) > 0 && is_numeric($parts[1])) {
-            $minute = $parts[1];
-        }
-        if(count($parts) > 1 && is_numeric($parts[2])) {
-            $minute = $parts[2];
-        }
-
-        if($twelveHours && $pm) {
-            $hour += 12;
-        }
-
-        return $second + $minute * 60 + $hour * 60 * 60;
-    }*/
 
     /**
      * @param $value

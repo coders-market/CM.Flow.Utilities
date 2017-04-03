@@ -2,9 +2,9 @@
 namespace CM\Flow\Utilities\ViewHelpers;
 
 use CM\Flow\Utilities\Service\DateTimeService;
-use TYPO3\Flow\I18n\Locale;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\I18n\Locale;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
+use Neos\Flow\Annotations as Flow;
 
 /**
  * check current context

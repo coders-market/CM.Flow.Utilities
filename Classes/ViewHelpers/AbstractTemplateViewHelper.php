@@ -1,12 +1,9 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers;
 
-use TYPO3\Flow\Mvc\ActionRequest;
-use TYPO3\Flow\Mvc\View\ViewInterface;
-use TYPO3\Flow\Reflection\ReflectionService;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Fluid\View\StandaloneView;
+use Neos\Flow\Reflection\ReflectionService;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
+use Neos\FluidAdaptor\View\StandaloneView;
 
 abstract class AbstractTemplateViewHelper extends AbstractViewHelper {
     /**
@@ -57,7 +54,7 @@ abstract class AbstractTemplateViewHelper extends AbstractViewHelper {
     }
     
     protected function initializeView() {
-        $this->view = new \TYPO3\Fluid\View\StandaloneView();
+        $this->view = new \Neos\FluidAdaptor\View\StandaloneView();
 
         $request = $this->view->getRequest();
         $request->setControllerPackageKey($this->templatePackage);

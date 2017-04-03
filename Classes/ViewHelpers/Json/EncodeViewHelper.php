@@ -1,8 +1,7 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers\Json;
 
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 
 class EncodeViewHelper extends AbstractViewHelper {
 

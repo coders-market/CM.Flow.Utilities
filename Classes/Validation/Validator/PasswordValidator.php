@@ -1,7 +1,7 @@
 <?php
 namespace CM\Flow\Utilities\Validation\Validator;
 
-use TYPO3\Flow\Validation\Validator\AbstractValidator;
+use Neos\Flow\Validation\Validator\AbstractValidator;
 
 class PasswordValidator extends AbstractValidator {
     /**
@@ -23,7 +23,7 @@ class PasswordValidator extends AbstractValidator {
      *
      * @param array|string $value
      * @return void
-     * @throws \TYPO3\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
+     * @throws \Neos\Flow\Validation\Exception\InvalidValidationOptionsException if invalid validation options have been specified in the constructor
      */
     protected function isValid($value) {
         // get the option for the validation

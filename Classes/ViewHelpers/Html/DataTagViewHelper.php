@@ -1,8 +1,7 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers\Html;
 
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Convert array with key:value to html5 data attribute with data-key="value"

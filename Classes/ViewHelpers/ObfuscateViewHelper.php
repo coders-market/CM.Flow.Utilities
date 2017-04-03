@@ -1,9 +1,8 @@
 <?php
 namespace CM\Flow\Utilities\ViewHelpers;
 
-use TYPO3\Flow\Exception;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Exception;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 
 class ObfuscateViewHelper extends AbstractViewHelper {
     protected $escapeOutput = false;
