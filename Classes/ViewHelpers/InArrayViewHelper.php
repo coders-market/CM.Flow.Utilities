@@ -6,7 +6,7 @@ use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 
 class InArrayViewHelper extends AbstractViewHelper {
     /**
-     * @param string $needle
+     * @param mixed $needle
      * @param array|\Traversable $haystack
      * @param bool $typeSafety
      * @return boolean
